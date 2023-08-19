@@ -99,7 +99,7 @@ function multiply(num1, num2) {
 }
 
 let ageRequiredToDrive = 16;
-let currentAge = 14;
+let currentAge = 13;
 
 if (currentAge >= ageRequiredToDrive) { 
     console.log('This person can drive')
@@ -116,7 +116,7 @@ if (checkCanDrive(currentAge)) {
     console.log('You walking')
 }
 
-function lowestGrade (gradebook)  { 
+function lowestGrade(gradebook)  { 
     if (gradebook.length > 0) {
         let lowGrade=gradebook[0];
         for (let grade of gradebook) {
@@ -136,3 +136,96 @@ for (let i = 0; i < gradesArray.length; i++) {
 }
 console.log("Evaluation;" );
 console.log("\tLowest Grade is: " + lowestGrade(gradesArray));
+
+
+
+let contactOne = {
+    firstName:"Mickey",
+    lastName:"Mouse",
+    address: {
+        street:"1 Main Street",
+        city:"Disneyland",
+        state:"CA",
+        zip:"92802",
+    },
+    phone:"123-456-7890",
+    notes:"",
+};
+console.log(contactOne.firstName + " " + contactOne.lastName + "lives in " + contactOne.address.city + " " + contactOne.address.state);
+
+console.log(customerNames);
+
+let names = ['sam', 'brian', 'tom', 'april', 'benn']
+
+let lengths = customerNames.map(function(element) {
+    return element.length;
+});
+console.log(lengths);
+
+let sum = lengths.reduce(function(accumulator,currentValue) {
+    return accumulator + currentValue;
+});
+console.log(sum);
+
+names.forEach(function(element) {
+    console.log(element);
+});
+
+let evens = names.filter(function(element) {
+    return element.length % 2 == 0;
+});
+console.log(evens);
+
+let removedElement = names.splice(2,1);
+console.log(removedElement); 
+
+
+const isPassing = (currentValue) => currentValue >= 70;
+
+
+gradesArray.push(55);
+console.log("Evaluation: ");
+
+if (gradesArray.every(isPassing)) { 
+console.log('\tEvery grade is a passing grade (>= 70)!');
+} else {
+console.log('\tNot all grades are passing.  A passing grade is >= 70!');
+}
+
+
+let s = 5
+
+function loopUntilX (s) {
+    for (let i = 0; i < s; i++) {
+        console.log(i);
+    } return true;
+}
+
+console.log(loopUntilX(s)); 
+
+
+function returnSum(num1, num2, num3) {
+    return (num1 + num2  + num3);
+}
+
+console.log(returnSum(1,2,3));
+
+myList = ["homework", "study for test", "finish project"]
+console.log(myList.length);
+console.log(myList[myList.length-1]);
+myList.push("submit");
+console.log(myList[myList.length-1]);
+myList.unshift("gather notes");
+console.log(myList[0]);
+
+myList.splice(1, 0, "make flashcards", "do labs");
+console.log(myList);
+
+myList.splice(2, 1);
+console.log(myList);
+
+for (let task of myList) {
+    console.log(task);
+}
+myList.sort(); 
+console.log(myList); 
