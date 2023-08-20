@@ -229,3 +229,6 @@ for (let task of myList) {
 }
 myList.sort(); 
 console.log(myList); 
+
+myList.sort().reverse();
+console.log(myList);
