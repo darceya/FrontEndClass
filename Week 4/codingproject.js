@@ -149,3 +149,71 @@ function wordFunction(word, n) {
 let createFullName = (firstName, lastName) => `${firstName} ${lastName}`; 
 
 console.log(createFullName("Casa", "Azul"));
+
+/* 9. Write a function that takes an array of numbers and returns true if the sum
+  of all the numbers in the array is greater than 100. */
+
+ array1 = [1, 5, 10]
+
+  function numbers(array1) {
+    let sum = 0; 
+    for (let i = 0; i < array1.length; i++) {
+      sum += array1[i];
+    }
+    
+    if (sum > 100) {
+      return true; 
+    } else {
+      return false;
+    }
+  }
+  
+console.log(numbers(array1)); 
+
+/* 10. Write a function that takes an array of numbers and returns the average of all 
+ the elements in the array. */
+
+ array2 = [1, 2, 3]
+function returnaverage(array2) {
+  let sum = 0;
+  for (let i = 0; i < array2.length; i++) {
+    sum += array2[i]
+  } const average = sum/ array2.length;
+  return average
+}
+
+console.log(returnaverage(array2)); 
+
+
+/* 11. Write a function that takes two arrays of numbers and returns true if the average of the elements
+in the first array is greater than the average of the elements in the second array. */
+
+array4 = [4, 2, 2]
+array5 = [3, 2, 1]
+
+function averageElementsInArray(array4, array5) {
+  let sum1 = 0;
+  for (let i = 0; i < array4.length; i++) {
+    sum1 += array4[i]
+} 
+const sumAverage1 = sum1 / array4.length;
+
+
+  let sum2 = 0;
+  for (let i = 0; i < array5.length; i++) {
+    sum2 += array5[i]
+} 
+const sumAverage2 = sum2 / array5.length;  
+
+return sumAverage1 > sumAverage2; 
+
+}
+
+console.log(averageElementsInArray(array4, array5)); 
+
+
+/* 12. Write a function called willBuyDrink that takes a boolean isHotOutside and a number moneyInPocket and returns
+true if it is hot outside and if moneyInPocket is greater than 10.50. */
+
+
+/* 13. Create a function of your own that solves a problem. Write what it does and why you created it. */
