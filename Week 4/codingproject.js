@@ -212,8 +212,39 @@ return sumAverage1 > sumAverage2;
 console.log(averageElementsInArray(array4, array5)); 
 
 
-/* 12. Write a function called willBuyDrink that takes a boolean isHotOutside and a number moneyInPocket and returns
-true if it is hot outside and if moneyInPocket is greater than 10.50. */
+/* 12. Write a function called willBuyDrink that takes a boolean isHotOutside and a number moneyInPocket 
+and returns true if it is hot outside and if moneyInPocket is greater than 10.50. */
 
+let isHotOutside = false;
+let moneyInPocket = 12; 
 
-/* 13. Create a function of your own that solves a problem. Write what it does and why you created it. */
+function willBuyDrink(isHotOutside, moneyInPocket) {
+
+  if (isHotOutside === true && moneyInPocket > 10.50) {
+    return true; 
+  } else {
+    return false; 
+  }
+} 
+
+console.log(willBuyDrink(isHotOutside, moneyInPocket)); 
+
+/* 13. Create a function of your own that solves a problem. Write what it does and why you created it.
+
+Write a function called willWalkDogs that takes a boolean for isNiceOutside and a boolean for isRaining and returnds
+true if isNiceOutside is true and isRaining is false and returns "Dogs would love a walk today!"
+
+*/
+
+let isNiceOutside = true
+let isRaining = false
+
+function willWalkDogs(isNiceOutside, isRaining) {
+  if (isNiceOutside === true && isRaining === false) {
+    return "Dogs would love a walk today!"; 
+  } else {
+    return "Dogs don't want to go anywhere!"
+  }
+}
+
+console.log(willWalkDogs(isNiceOutside, isRaining)); 
