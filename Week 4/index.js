@@ -106,3 +106,13 @@ console.log("You can call multiple functions this way.");
 .catch(function failureValue(reject) {
 console.log(reject);
 });
+
+
+
+const drink = "water"
+const food = "indian"
+
+let myName = "Dudley"
+let friendsname = "Dragon"
+
+console.log(`My friend, ${friendsname}, and ${myName} are drinking ${drink} and eating ${food}`); 
