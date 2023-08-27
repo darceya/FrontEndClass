@@ -173,7 +173,7 @@ console.log(numbers(array1));
 /* 10. Write a function that takes an array of numbers and returns the average of all 
  the elements in the array. */
 
- array2 = [1, 2, 3]
+ array2 = [2, 2, 3]
 function returnaverage(array2) {
   let sum = 0;
   for (let i = 0; i < array2.length; i++) {
@@ -183,40 +183,46 @@ function returnaverage(array2) {
 }
 
 console.log(returnaverage(array2)); 
+console.log(returnaverage(array1)); 
 
 
 /* 11. Write a function that takes two arrays of numbers and returns true if the average of the elements
 in the first array is greater than the average of the elements in the second array. */
 
+// function averageElementsInArray(arr1,arr2) {
+// //   let sum1 = 0;
+// //   for (let i = 0; i < array4.length; i++) {
+// //     sum1 += array4[i]
+// // } 
+// // const sumAverage1 = sum1 / array4.length;
+
+// //   let sum2 = 0;
+// //   for (let i = 0; i < array5.length; i++) {
+// //     sum2 += array5[i]
+// // } 
+// // const sumAverage2 = sum2 / array5.length;  
+
+// const sum1 = returnaverage(arr1)
+// const sum2 =  returnaverage(arr2)
+
+// return sumAverage1 > sumAverage2; 
+
+// }
+
 array4 = [4, 2, 2]
 array5 = [3, 2, 1]
 
-function averageElementsInArray(array4, array5) {
-  let sum1 = 0;
-  for (let i = 0; i < array4.length; i++) {
-    sum1 += array4[i]
-} 
-const sumAverage1 = sum1 / array4.length;
-
-
-  let sum2 = 0;
-  for (let i = 0; i < array5.length; i++) {
-    sum2 += array5[i]
-} 
-const sumAverage2 = sum2 / array5.length;  
-
-return sumAverage1 > sumAverage2; 
-
-}
+const averageElementsInArray = (arr1,arr2) => returnaverage(arr1) > returnaverage(arr2) 
 
 console.log(averageElementsInArray(array4, array5)); 
+
+console.log(averageElementsInArray(array1, array2)); 
 
 
 /* 12. Write a function called willBuyDrink that takes a boolean isHotOutside and a number moneyInPocket 
 and returns true if it is hot outside and if moneyInPocket is greater than 10.50. */
 
-let isHotOutside = false;
-let moneyInPocket = 12; 
+
 
 function willBuyDrink(isHotOutside, moneyInPocket) {
 
@@ -227,17 +233,20 @@ function willBuyDrink(isHotOutside, moneyInPocket) {
   }
 } 
 
-console.log(willBuyDrink(isHotOutside, moneyInPocket)); 
+console.log(willBuyDrink(true, 12)); 
+
+console.log(willBuyDrink(true, 9));
+
+console.log(willBuyDrink(false, 20)); 
 
 /* 13. Create a function of your own that solves a problem. Write what it does and why you created it.
 
 Write a function called willWalkDogs that takes a boolean for isNiceOutside and a boolean for isRaining and returnds
 true if isNiceOutside is true and isRaining is false and returns "Dogs would love a walk today!"
 
+
 */
 
-let isNiceOutside = true
-let isRaining = false
 
 function willWalkDogs(isNiceOutside, isRaining) {
   if (isNiceOutside === true && isRaining === false) {
@@ -247,4 +256,13 @@ function willWalkDogs(isNiceOutside, isRaining) {
   }
 }
 
-console.log(willWalkDogs(isNiceOutside, isRaining)); 
+
+console.log(willWalkDogs(true,false)); 
+
+console.log(willWalkDogs(false,true));
+
+console.log(willWalkDogs(true,true)); 
+
+console.log(willWalkDogs(false,false)); 
+
+
