@@ -81,3 +81,8 @@ console.log(xor(5, 3));
 const perfectSquare = param => Math.pow(param, 2); 
 
 console.log(perfectSquare(3)); 
+
+for (let i = "a"; i !== "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"; i += "a") {
+    console.log(i)
+  }
+  

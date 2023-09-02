@@ -124,41 +124,11 @@ const customers = [
     ];
 
 
-    Time left 189:17:44
-Question 7
-Not yet answered
-Points out of 6.00
-Flag question
-Question text
-Let's put it all together!
 
 
 
-Premise: 
-A product owner on your development team believes they've noticed a pattern regarding which customers purchase the most items. Please follow these instructions to process an array of customer objects and generate a new array that meets the specified requirements:
-
-Iterate through the array of customer objects using a for loop.
-For each customer object, check if the address field is defined.
-If the address field is undefined, log a message to the console indicating that the address field is undefined.
-If the address field is defined, proceed to the next step.
-Check if ANY of the following conditions are met:
-The customer's name starts with an uppercase 'C'.
-The customer's membership level is "GOLD" or "PLATINUM". If the membership level is "SILVER" AND the age is less than 29, then that's okay, too. 
-The customer's city is "Peoria" and the state is "AZ".
-If any of the conditions from question 5 are met, push the customer object to a results array.
-Once all customer objects have been processed, return the results array as the final output.
-Note:
-
-Accessing properties within an object requires the use of dot notation.
-To start this question, you are given the following:
-An array of customers named "customers."
-The function and a call to the function. (The comparison logic is missing.)
-The for-loop is provided to traverse the array. Notice the variable name within the for-loop!
-Console logs are provided to understand the output of the statements.
-Some of the choices below may be used more than once, while others may not be used at all.
 
 
-JavaScript Customer Data:
 
 const customers = [
 {
@@ -209,4 +179,3 @@ const matchingCustomers = (custArray) => {
 
             } 
         }
-        
