@@ -17,7 +17,9 @@
   },
   "homepage": "https://github.com/darceya/FrontEndClass#readme",
   "dependencies": {
+    "bootstrap": "^5.3.2",
     "chai": "^4.3.8",
     "mocha": "^10.2.0"
-  }
+  },
+  "keywords": []
 }

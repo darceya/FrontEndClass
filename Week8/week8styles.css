@@ -1,0 +1,107 @@
+
+body {
+  background-color:aqua;
+}
+
+h1 {
+  color: goldenrod;
+}
+
+div {
+  background-color: cornflowerblue;
+  border-style: solid;
+  border-color: black;
+  border-radius: 8px;
+}
+
+.shadow-text {
+  text-shadow: gray 1px 1px;
+}
+
+#large-paragraph {
+  font-size: 30px;
+}
+
+#borders {
+    border-style: solid;
+    border-color: red;
+    border-radius: 5px;
+    
+}
+
+.hov { 
+    height: 200px;
+    width: 200px;
+    background-color: chartreuse;
+}
+
+.hov:hover {
+    background-color: coral;
+}
+
+.every-even li:nth-child(even) {
+    background-color: purple;
+}
+
+.every-third li:nth-child(3n) {
+    background-color: yellow;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    padding: 8px;
+    text-align: center;
+    border-bottom: 1px solid blue;
+}
+
+tr:nth-child(even) {
+    background-color: aquamarine;
+
+}
+
+tr:hover {
+    background-color: yellow;
+}
+
+#student-header {
+text-align
+ : center;
+}
+
+table {
+width: 100%;
+margin-bottom: 20px;
+}
+
+
+th, td {
+padding: 8px;
+border-bottom: 1px solid gray;
+}
+
+th {
+background-color: darkgray;
+}
+
+
+tbody, tr
+ :hover {
+background-color: darkcyan;
+
+color: white;
+}
+
+#box-model {
+    padding: 20px;
+    border-style: solid;
+    border-width: 3px;
+    margin: 30px;
+}
+
+#secretMessage {
+      display: contents;
+}
